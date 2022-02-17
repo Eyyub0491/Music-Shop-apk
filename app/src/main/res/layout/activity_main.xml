@@ -86,17 +86,18 @@
             android:id="@+id/priceValue"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="50dp"
             android:gravity="center"
             android:text="0"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="30dp" />
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="17dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
+            android:id="@+id/dollarText"
             android:foregroundGravity="center_vertical"
             android:gravity="center_vertical"
             android:text="$"
@@ -112,6 +113,7 @@
                 android:id="@+id/minusButton"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_marginEnd="5dp"
                 android:text="-"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
