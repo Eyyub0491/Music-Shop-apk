@@ -20,35 +20,49 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        app:srcCompat="@drawable/poster" />
+        app:srcCompat="@drawable/poster"/>
 
-    <TextView
-        android:id="@+id/txtSelect"
-
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="Select item"
-        android:textAlignment="textEnd"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="24sp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fadeScrollbars="true"
-        android:minHeight="5dp"
-        android:textAlignment="textEnd"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/goodsImage"
-        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="120dp"
+        android:orientation="horizontal">
 
-        app:srcCompat="@drawable/guitar" />
+        <LinearLayout
+            android:layout_width="141dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSelect"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Select item"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fadeScrollbars="true"
+                android:minHeight="5dp"
+                android:textAlignment="textStart"
+                tools:ignore="SpeakableTextPresentCheck"
+
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/goodsImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/guitar" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,11 +107,11 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/dollarText"
             android:layout_width="17dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
-            android:id="@+id/dollarText"
             android:foregroundGravity="center_vertical"
             android:gravity="center_vertical"
             android:text="$"
@@ -158,11 +172,32 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button5"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add to cart"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:text="Add to cart"></Button>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:text="Clear Cart" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:text="Your order" />
+
+    </LinearLayout>
 
 </LinearLayout>
